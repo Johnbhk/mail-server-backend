@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail Server</title>
+</head>
+<body>
+<h2>Mail Server</h2>
+<form action="index.html" method="post">
+    <label for="from_email">From Email:</label><br>
+    <input type="email" id="from_email" name="from_email" required><br><br>
+
+    <label for="to_email">To Email:</label><br>
+    <input type="email" id="to_email" name="to_email" required><br><br>
+
+    <label for="subject">Subject:</label><br>
+    <input type="text" id="subject" name="subject" required><br><br>
+
+    <label for="body">Body:</label><br>
+    <textarea id="body" name="body" rows="4" cols="50" required></textarea><br><br>
+
+    <input type="submit" value="Send Email">
+</form>
+</body>
+</html>
