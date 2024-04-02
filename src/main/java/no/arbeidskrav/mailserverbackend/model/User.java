@@ -7,10 +7,10 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-@Table(name = "users")
+@Table(name = "users") // table name
 public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO) // auto inc. primary key
+    @GeneratedValue(strategy = GenerationType.AUTO) // auto incriment primary key
     private Long id;
 
     @Column(name = "username")

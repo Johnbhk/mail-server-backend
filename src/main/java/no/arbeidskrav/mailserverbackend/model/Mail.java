@@ -10,7 +10,7 @@ import lombok.Setter;
 @Table(name = "mails")
 public class Mail {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO) // auto inc. key
+    @GeneratedValue(strategy = GenerationType.AUTO) // auto incriment primarykey key
     private Long id;
 
     @Column(name = "fromMail")
@@ -39,7 +39,7 @@ public class Mail {
 
     @Override
     public String toString() {
-        return "Mail [id=" + id + ", from Mail=" + fromMail + ", To Mail=" + toMail 
+        return "Mail [id=" + id + ", from Mail=" + fromMail + ", to Mail=" + toMail
                 + ", Subject=" + subject + ", Body="
                 + body +", Timestamp=" + timestamp +"]";
     }

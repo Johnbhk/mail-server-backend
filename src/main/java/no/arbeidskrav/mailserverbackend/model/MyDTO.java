@@ -8,9 +8,11 @@ import lombok.Setter;
 @Setter
 public class MyDTO {
     @Id
-    private Long id;
+    private Long id; // primary key
     private String username;
     private String email;
+
+    // constructor
     public MyDTO(String username, String email) {
         this.username = username;
         this.email = email;
